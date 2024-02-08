@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --text-secondary: rgb(116, 116, 116);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	transition: 0.2s ease;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter Tight', sans-serif;
+    background: white;
+    color: black;
+}
+
+a {
+	text-decoration: none;
+    color: inherit;
+}
+
+li {
+	list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+button {
+    padding: 15px 20px;
+    color: white;
+    background: black;
+    font-size: 0.6em;
+    border: none;
+}
+
+button i {
+    margin-right: 5px;
+    font-size: 1.4em;
+    vertical-align: sub;
+}
+
+.light {
+    background: white;
+    color: black;
+}
+
+.row {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.container {
+    max-width: 950px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 0.8em;
+    color: rgb(73, 73, 73);
+    line-height: 1.8em;
+}
+
+h1 {
+    font-size: 4.5em;
+    font-weight: 400;
+    white-space: pre;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 2.3em;
+    white-space: pre;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+h5 {
+    font-size: 1em;
+    font-weight: 500;
+    clear: both;
+}
+
+h1, h2, h3, h5 {
+    font-family: "Cinzel", serif;
+}
+
+.col-left {
+    padding-right: 25px;
+}
+
+.col-right {
+    padding-left: 25px;
+}
+
+/* Header */
+header {
+    padding-left: max(20px, 8%);
+    padding-right: max(20px, 8%);
+    padding-top: 15px;
+    font-size: 0.8em;
+}
+
+.bx-menu {
+    font-size: 2.5em;
+    display: none;
+    margin-top: 5px;
+}
+
+header > * {
+    display: block;
+    width: 15%;
+    float: left;
+}
+
+header > a:first-child {
+    margin-bottom: 10px;
+}
+
+header nav {
+    width: 70%;
+}
+
+header nav, header > a:last-child {
+    margin-top: 10px;
+}
+
+header > a:last-child {
+    text-align: right;
+}
+
+header ul {
+    width: max-content;
+    margin: auto;
+}
+
+header ul li {
+    float: left;
+}
+
+header li:not(:last-child) {
+    margin-right: 40px;
+}
+
+/* Main */
+main {
+    /* min-height: 124vh; */
+    background-image: url('../img/background-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 10%;
+}
+
+main {
+    padding-left: max(20px, 15.9%);
+    padding-right: max(20px, 15.9%);  
+    padding-bottom: 36px;
+}
+
+main section {
+    width: 230px;
+    background: black;
+    padding: 30px;
+    font-family: "Cinzel", serif;
+}
+
+main > a button {
+    margin-bottom: 40px;
+}
+
+main p {
+    font-family: "Cinzel", serif;
+    letter-spacing: 0.2em;
+    margin-bottom: 30px;
+    color: white;
+}
+
+main h5 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+main strong {
+    font-weight: 600;
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+main section button {
+    margin-top: 20px;
+}
+
+main > span {
+    position: absolute;
+    right: 25px;
+    bottom: 0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: "Cinzel", serif;
+    letter-spacing: 0.2em;
+}
+
+.up {
+    background: black;
+    padding: 8px 10px;
+    border-radius: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    outline: 2px solid white;
+}
+/* Benefits */
+.benefits {
+    text-align: center;
+}
+
+.benefits img {
+    width: 60px;
+    margin-bottom: 25px;
+}
+
+.benefits section {
+    width: 33.33%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Info */
+.info {
+    background: #F3F4F6;
+}
+
+.info section {
+    width: 50%;
+    float: left;
+}
+
+.info p {
+    margin-bottom: 30px;
+}
+
+.info .col-right {
+    padding-top: 12px;
+}
+
+/* Stylers */
+.stylers {
+    text-align: center;
+    transition: 2s ease;
+}
+
+.stylers img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.stylers img:hover {
+    transition: 0.5s ease;
+    opacity: .5;
+}
+
+.stylers img:hover ~ ul .bx {
+    visibility: visible;
+    opacity: 1;
+}
+
+.stylers .bx {
+    color: white;
+    background: black;
+    padding: 8px;
+    border-radius: 50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.stylers ul {
+    position: absolute;
+    top: calc(50% - 5%);  
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stylers li {
+    float: left;
+    margin-left: 5px;
+}
+
+.stylers-container {
+    max-width: 974px;
+}
+
+.stylers-container section {
+    width: 25%;
+    float: left;
+    padding: 0 12px;
+    position: relative;
+}
+
+.stylers span {
+    font-size: 0.7em;
+}
+
+/* Offer */
+.offer {
+    background-image: url('../img/Promo-Banner-Image.jpg');
+    background-size: cover;
+    max-width: 910px;
+    margin: auto;
+}
+
+.offer > * {
+    margin-left: 60px;
+}
+
+.offer h3 {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.offer strong {
+    font-family: "Cinzel", serif;
+    font-size: 2em;
+    font-weight: 400;
+    white-space: pre;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.offer a {
+    display: block;
+}
+
+/* Lookbook */
+.lookbook {
+    text-align: center;
+}
+
+.lookbook-container {
+    max-width: 960px;
+}
+
+.lookbook-container img {
+    width: 100%;
+    padding: 5px;
+}
+
+.lookbook-container img:hover {
+    filter: brightness(30%);
+}
+
+.img-container > section{
+    width: 33.33%;
+    float: left;
+}
+
+/* Footer */
+.footer  {
+    background: black;
+    color: white;
+    padding-bottom: 0;
+}
+
+.separator {
+    border-bottom: 1px solid rgb(56, 56, 56);
+    padding-bottom: 40px;
+}
+
+.footer-top {
+    max-width: 970px;
+}
+
+.footer-top > section {
+    width: 25%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer > section:first-child img{
+    width: 33.33%;
+    float: left;
+    padding-bottom: 7px;
+    padding-right: 7px;
+}
+
+footer h5 {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+footer p, footer span {
+    color: white;
+    font-size: 0.8em;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.footer-top > section:first-child i {
+    color: black;
+    background: white;
+    border-radius: 50%;
+    padding: 11px;
+    font-size: 0.8em;
+    margin-right: 6px;
+}
+
+footer h5::after
+{
+  content: '';
+  border-bottom: 4px solid #ffffff;
+  width: 30px;
+  display: block;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+footer h6 {
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+
+.footer-top > section:nth-child(2) i {
+    margin-right: 12px;
+}
+
+.footer-top > section:nth-child(2) span {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.footer-top > section:nth-child(3) section {
+    font-size: 0.9em;
+    clear: both;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-top > section:nth-child(3) section:not(:last-child) {
+    border-bottom: 1px solid rgb(56, 56, 56);
+}
+
+.footer-top > section:nth-child(3) img {
+    float: left;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.footer-top > section:nth-child(3) i {
+    margin-right: 7px;
+}
+
+.below {
+    font-size: 0.8em;
+    font-weight: 300;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.below section:first-child {
+    float: left;
+}
+
+.below section:last-child {
+    float: right;
+}
+
+.below li {
+    float: left;
+    margin-left: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1100px) {
+    /* Header */
+    header > a:last-child {
+        display: none;
+    }
+
+    header nav {
+        width: 85%;
+    }
+    
+    header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Main */
+    main {
+        background-size: contain;
+    }
+
+    /* Stylers */
+    .stylers section {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    /* Footer */
+    .footer-top > section {
+        width: 50%;
+    }
+
+    footer h6 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    /* Header */
+    header nav {
+        display: none;
+    }
+
+    .bx-menu {
+        display: block;
+        float: right;
+        text-align: right;
+    }
+
+    /* Main */
+    h1 {
+        font-size: 10vw;
+    }
+
+    main {
+        padding-top: 17%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    main > p {
+        display: none;
+    }
+
+    main section {
+        display: none;
+    }
+
+    /* Benefits */
+    .benefits section {
+        width: 100%;
+        float: none;
+    }
+
+    /* Info */
+    .info section {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .info section:first-child {
+        margin-bottom: 20px;
+    } 
+
+    /* Offer */
+    .offer > * {
+        margin-left: 20px;
+    }
+    
+    .offer strong {
+        width: 80vw;
+        white-space: normal;
+    }
+
+    /* Lookbook */
+    .lookbook h2 {
+        text-wrap: wrap;
+    }
+
+    /* Footer */
+    .below section {
+        width: 100%;
+        float: none;
+    }
+
+    
+    .below > section:first-child {
+        margin-bottom: 20px;
+    }
+
+    .below li {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .img-container > section{
+        width: 100%;
+        float: none;
+    }
+
+    /* Stylers */
+    .stylers section {
+        width: 100%;
+    }  
+
+    /* Footer */
+    .footer-top > section {
+        width: 100%;
+        float: none;
+    }
+}
