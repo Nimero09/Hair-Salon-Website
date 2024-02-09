@@ -499,6 +499,12 @@ footer h6 {
 }
 
 /* Media Queries */
+@media screen and (min-width: 1500px) {
+    main {
+        padding-bottom: 12%;
+    }
+}
+
 @media screen and (max-width: 1100px) {
     /* Header */
     header > a:last-child {
